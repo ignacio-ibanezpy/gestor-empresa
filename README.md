@@ -1,16 +1,16 @@
-# React + Vite
+# Panel Operativo — Gestión de Trabajos y Notas
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Aplicación web progresiva (PWA) desarrollada para organizar la operativa diaria, seguimiento de trabajos pendientes y registro de notas rápidas con sincronización en tiempo real.
 
-Currently, two official plugins are available:
+**Demo en vivo:** [gestor-empresa.pages.dev](https://gestor-empresa.pages.dev)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Funcionalidades principales
+- **Gestión diaria y arrastre automático:** Reprogramación automática de trabajos incompletos hacia la fecha actual con indicador de días de retraso.
+- **Estados operativos:** Control de flujo por estado (*Pendiente*, *En curso*, *Faltante*, *Completado*).
+- **Bloc de notas integrado:** Espacio de anotaciones rápidas sincronizado por usuario.
+- **Multiplataforma (PWA):** Instalable en escritorio y dispositivos móviles desde el navegador.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Stack tecnológico
+- **Frontend:** React + Vite
+- **Backend & Autenticación:** Supabase (PostgreSQL + Row Level Security)
+- **Despliegue continuo (CI/CD):** GitHub + Cloudflare Pages
